@@ -9,7 +9,7 @@ $buildSearchStr = Get-ChildItem $($searchPath) -Recurse -Force -Include *.avi -E
 #$buildSearchStr
 
 # Construct filtered output with only FileName and File Length outputting. 
-$filterOutputSet = $buildSearchStr | Select name, length | Sort name desc
+$filterOutputSet = $buildSearchStr | Select name, length | Sort name
 $filterOutputSet
 
 # I re-use previous scripts for various tasks. I find this helps me learn processes and coding in powershell, WAAAAY easier.
